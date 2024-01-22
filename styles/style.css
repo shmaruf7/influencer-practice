@@ -194,3 +194,67 @@ header{
     justify-content: center;
     gap: 16px;
   }
+
+  /* media query */
+
+  @media screen and (max-width: 576px) {
+    header{
+      margin: 0px;
+      
+    
+    }
+    .nav-bar{
+      flex-direction: row-reverse;
+      align-items: normal;
+    }
+    ul{
+      flex-direction: column;
+      margin: 0;
+      
+
+    }
+    .banner-container{
+      flex-direction: column-reverse;
+      text-align: center;
+      
+    }
+ 
+    .button-primary{
+      width: 50%;
+      margin: 5px auto;
+    }
+    .banner-picture{
+       background-position: center;
+       background-size: cover;
+       margin: 50px auto;
+       /* padding: ; */
+    }
+    .banner-picture img{
+      width: 120%;
+      
+
+    }
+    .sponsor{
+      height: auto;
+      width: 90%;
+      border: none;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .card-container{
+      grid-template-columns: 310px;
+    }
+    .feature-container{
+      flex-direction: column-reverse;
+    }
+    .feature-elements{
+      width: 90%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .feature-elements p{
+      width: fit-content;
+      
+      
+    }
+  }
